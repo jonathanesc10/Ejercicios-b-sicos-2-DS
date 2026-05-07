@@ -6,7 +6,6 @@
     <title>Diseño de Arquitectura de Software</title>
     <style>
         body {
-            /* Nueva dirección de imagen de fondo proporcionada */
             background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ocgEgX1g5b7qCRMNs4ydIar_ovd-PHpjdQ&s');
             background-size: cover;
             background-position: center;
@@ -19,7 +18,6 @@
             padding: 0;
         }
 
-        /* Encabezado */
         #mi-encabezado {
             background-color: #4a63d8;
             color: white;
@@ -27,25 +25,6 @@
             padding: 20px;
         }
 
-        /* Menú */
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        /* Títulos */
         h1 {
             font-size: 40px;
             font-family: Georgia, serif;
@@ -55,9 +34,10 @@
         h2 {
             font-size: 30px;
             color: #4a63d8;
+            border-bottom: 2px solid #4a63d8;
+            padding-bottom: 10px;
         }
 
-        /* Contenido */
         .contenido {
             width: 80%;
             margin: 40px auto;
@@ -67,13 +47,16 @@
             box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
         }
 
-        /* Párrafos */
         p {
             line-height: 1.8;
             font-size: 18px;
+            text-align: justify;
         }
 
-        /* Pie de página */
+        ul {
+            line-height: 2;
+        }
+
         .footer {
             background-color: #4a63d8;
             color: white;
@@ -86,37 +69,45 @@
 <body>
 
     <header id="mi-encabezado">
-        <h1>Diseño de Arquitectura de Software</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#acerca">Acerca de</a></li>
-                <li><a href="#contactos">Contactos</a></li>
-            </ul>
-        </nav>
+        <h1>Fundamentos de la Arquitectura de Software</h1>
     </header>
 
     <div class="contenido">
-        <section id="inicio">
-            <h2>Inicio</h2>
-            <p>La arquitectura de software es la base fundamental de cualquier sistema de información. Se encarga de definir la estructura, los componentes y las interacciones que permiten que una aplicación sea escalable, segura y eficiente ante los retos tecnológicos actuales.</p>
+        <section>
+            <h2>¿Qué es la Arquitectura de Software?</h2>
+            <p>La arquitectura de software consiste en el diseño de alto nivel de la estructura de un sistema. Define los componentes principales, sus propiedades externas y las relaciones entre ellos. Es la base sobre la cual se construye cualquier solución informática robusta y eficiente.</p>
         </section>
 
-        <section id="acerca">
-            <h2>Acerca de</h2>
-            <p>Este proyecto se enfoca en la creación de soluciones digitales robustas. A través del análisis de requerimientos y la implementación de patrones de diseño como MVC o Microservicios, transformamos procesos complejos en plataformas intuitivas y fáciles de mantener.</p>
+        <section>
+            <h2>Importancia del Diseño Arquitectónico</h2>
+            <p>Un buen diseño arquitectónico permite que el software sea escalable, mantenible y seguro. Sus objetivos principales incluyen:</p>
+            <ul>
+                <li><strong>Escalabilidad:</strong> Capacidad de manejar un aumento en la carga de trabajo.</li>
+                <li><strong>Mantenibilidad:</strong> Facilidad para realizar cambios o corregir errores sin afectar todo el sistema.</li>
+                <li><strong>Rendimiento:</strong> Optimización del tiempo de respuesta y uso de recursos.</li>
+                <li><strong>Seguridad:</strong> Implementación de capas de protección desde la estructura base.</li>
+            </ul>
         </section>
 
-        <section id="contactos">
-            <h2>Contactos</h2>
-            <p>¿Tienes un proyecto en mente? Estamos listos para ayudarte con el diseño técnico y la arquitectura de tu próximo sistema.</p>
-            <p>📧 <strong>Email:</strong> consultoria@arquitectura.com<br>
-               📍 <strong>Ubicación:</strong> Proyectos Globales 2026</p>
+        <section>
+            <h2>Patrones Arquitectónicos Comunes</h2>
+            <p>Existen diversas formas de organizar los componentes de un software dependiendo de las necesidades del proyecto:</p>
+            <ul>
+                <li><strong>Arquitectura en Capas:</strong> Separa las responsabilidades (Presentación, Lógica, Datos).</li>
+                <li><strong>Modelo-Vista-Controlador (MVC):</strong> Divide la interfaz de usuario de la lógica de negocio.</li>
+                <li><strong>Microservicios:</strong> Estructura la aplicación como una colección de servicios pequeños e independientes.</li>
+                <li><strong>Arquitectura Orientada a Servicios (SOA):</strong> Se basa en servicios comunicados a través de una red.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Arquitectura de Información</h2>
+            <p>Es la disciplina que se encarga de organizar y estructurar los datos dentro del software para que el usuario pueda encontrarlos y utilizarlos de manera intuitiva. Incluye el diseño de bases de datos, la jerarquía de contenidos y el flujo de navegación del sistema.</p>
         </section>
     </div>
 
     <footer class="footer">
-        <p>&copy; 2026 - Especialistas en Arquitectura de Software e Información</p>
+        <p>&copy; 2026 - Información Técnica de Sistemas de Software</p>
     </footer>
 
 </body>
