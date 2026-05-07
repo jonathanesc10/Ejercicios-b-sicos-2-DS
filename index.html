@@ -1,57 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
-<head></head>
-<meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño de Arquitectura de Software</title>
-     <!-- Archivo CSS -->
-       <link rel="stylesheet" href="styles.css">
-       </head>
-       <body></body>
- <!-- Encabezado -->
-   <header id="mi-encabezado"></header>
-    <!-- Menú -->
-      <nav></nav>
-        <ul></ul>
-         <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Acerca de</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                 </ul>
-                  </nav>
-                  <h1>Diseño de Arquitectura de Software</h1>
-        <p>Bienvenidos</p>
- </header>
-  <!-- Contenido principal -->
-    <main></main>
- <section class="contenido"></section>
-  <h2></h2>
-  <span style="background-color: rgb(208, 209, 245);">
-                    Bienvenidos al tema Diseño de Arquitectura de Software
-                     </span>
-                      </h2>
-                       <hr>
-                        <p></p>
-                        El Diseño de Arquitectura de Software es el proceso de planificar,
-                organizar y estructurar un sistema antes de desarrollarlo.
-                Permite definir cómo funcionarán los componentes del software
-                y cómo se comunicarán entre sí.
-                 </p>
-                 <p></p>
-                  La arquitectura de software es importante porque ayuda a crear
-                sistemas más seguros, rápidos y fáciles de mantener.
-                También facilita el trabajo en equipo entre los desarrolladores.
-                 </p>
-                  <h2>¿Para qué sirve?</h2>
-                  <p></p>
-                  Sirve para diseñar la estructura de programas y aplicaciones,
-                permitiendo que el sistema tenga mejor rendimiento y organización.
-                </p>
-                 <p></p>
-                  Gracias al diseño arquitectónico se pueden evitar errores,
-                reducir costos y mejorar la calidad del software.
-                  </p>
+    <style>
+        /* Configuramos el fondo directamente en el CSS del index */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+            /* URL de la imagen que solicitaste */
+            background-image: url('https://ecuador.unir.net/wp-content/uploads/sites/8/2024/01/Que-es-la-arquitectura-de-software-Caracteristicas-y-tipos.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
 
+        /* Capa de contraste para que el texto sea legible */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.75);
+            min-height: 100vh;
+            width: 100%;
+        }
 
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            text-align: center;
+        }
 
+        nav a {
+            color: #00d4ff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
 
+        .content {
+            max-width: 900px;
+            margin: auto;
+            padding: 50px 20px;
+        }
 
+        section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        h1, h2 {
+            color: #00d4ff;
+            border-bottom: 2px solid #00d4ff;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9em;
+            background: rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#acerca">Acerca de</a>
+            <a href="#contactos">Contactos</a>
+        </nav>
+
+        <div class="content">
+            
+            <!-- SECCIÓN INICIO -->
+            <section id="inicio">
+                <h1>Diseño de Arquitectura</h1>
+                <p><strong>Fundamentos y Estructura Digital</strong></p>
+                <p>La arquitectura de software es el diseño de más alto nivel de la estructura de un sistema. Define cómo los componentes de software interactúan entre sí para cumplir con los requisitos del negocio, garantizando escalabilidad, seguridad y alto rendimiento.</p>
+            </section>
+
+            <!-- SECCIÓN ACERCA DE -->
+            <section id="acerca">
+                <h2>Acerca de</h2>
+                <p>El diseño de arquitectura de información se encarga de organizar, estructurar y etiquetar el contenido de forma efectiva. Nuestro enfoque permite que los sistemas complejos sean fáciles de navegar y mantener a largo plazo.</p>
+                <ul>
+                    <li>Análisis de componentes.</li>
+                    <li>Definición de patrones (MVC, Microservicios).</li>
+                    <li>Estructuración de bases de datos relacionales.</li>
+                </ul>
+            </section>
+
+            <!-- SECCIÓN CONTACTOS -->
+            <section id="contactos">
+                <h2>Contactos</h2>
+                <p>¿Necesitas una estructura sólida para tu sistema de información?</p>
+                <p>📧 Email: soporte.tecnico@arquitectura.com</p>
+                <p>💻 Github: github.com/proyecto-arquitectura</p>
+                <p>📍 Ubicación: Desarrollo Global</p>
+            </section>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Especialistas en Diseño de Sistemas e Información</p>
+        </footer>
+    </div>
+
+</body>
+</html>
