@@ -3,116 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño de Arquitectura de Software</title>
+    <title>Arquitectura de Software</title>
     <style>
-        /* Configuramos el fondo directamente en el CSS del index */
         body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', sans-serif;
-            color: white;
-            /* URL de la imagen que solicitaste */
+            /* Imagen de fondo solicitada */
             background-image: url('https://ecuador.unir.net/wp-content/uploads/sites/8/2024/01/Que-es-la-arquitectura-de-software-Caracteristicas-y-tipos.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
+            
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
 
-        /* Capa de contraste para que el texto sea legible */
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.75);
-            min-height: 100vh;
-            width: 100%;
-        }
-
-        nav {
-            background: rgba(0, 0, 0, 0.9);
+        /* Encabezado */
+        #mi-encabezado {
+            background-color: rgba(74, 99, 216, 0.9); /* Azul con ligera transparencia */
+            color: white;
+            text-align: center;
             padding: 20px;
-            text-align: center;
         }
 
-        nav a {
-            color: #00d4ff;
-            margin: 0 20px;
+        /* Menú */
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 15px;
+        }
+
+        nav ul li a {
+            color: white;
             text-decoration: none;
+            font-size: 20px;
             font-weight: bold;
-            text-transform: uppercase;
         }
 
-        .content {
-            max-width: 900px;
-            margin: auto;
-            padding: 50px 20px;
+        /* Títulos */
+        h1 {
+            font-size: 40px;
+            font-family: Georgia, serif;
+            margin: 0;
         }
 
-        section {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(5px);
+        h2 {
+            font-size: 30px;
+            color: #4a63d8;
         }
 
-        h1, h2 {
-            color: #00d4ff;
-            border-bottom: 2px solid #00d4ff;
-            display: inline-block;
-            margin-bottom: 20px;
+        /* Contenido con transparencia para que se vea el fondo */
+        .contenido {
+            width: 80%;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9); /* Blanco semi-transparente */
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
         }
 
-        footer {
+        /* Párrafos */
+        p {
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        /* Pie de página */
+        .footer {
+            background-color: #4a63d8;
+            color: white;
             text-align: center;
-            padding: 30px;
-            font-size: 0.9em;
-            background: rgba(0, 0, 0, 0.9);
+            padding: 15px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <div class="overlay">
+    <header id="mi-encabezado">
+        <h1>Diseño de Arquitectura de Software</h1>
         <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#acerca">Acerca de</a>
-            <a href="#contactos">Contactos</a>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+            </ul>
         </nav>
+    </header>
 
-        <div class="content">
-            
-            <!-- SECCIÓN INICIO -->
-            <section id="inicio">
-                <h1>Diseño de Arquitectura</h1>
-                <p><strong>Fundamentos y Estructura Digital</strong></p>
-                <p>La arquitectura de software es el diseño de más alto nivel de la estructura de un sistema. Define cómo los componentes de software interactúan entre sí para cumplir con los requisitos del negocio, garantizando escalabilidad, seguridad y alto rendimiento.</p>
-            </section>
+    <div class="contenido">
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>La arquitectura de software representa el diseño de más alto nivel de la estructura de un sistema. Es el mapa que guía el desarrollo para asegurar que el software sea escalable, seguro y eficiente.</p>
+        </section>
 
-            <!-- SECCIÓN ACERCA DE -->
-            <section id="acerca">
-                <h2>Acerca de</h2>
-                <p>El diseño de arquitectura de información se encarga de organizar, estructurar y etiquetar el contenido de forma efectiva. Nuestro enfoque permite que los sistemas complejos sean fáciles de navegar y mantener a largo plazo.</p>
-                <ul>
-                    <li>Análisis de componentes.</li>
-                    <li>Definición de patrones (MVC, Microservicios).</li>
-                    <li>Estructuración de bases de datos relacionales.</li>
-                </ul>
-            </section>
+        <section id="acerca">
+            <h2>Acerca de</h2>
+            <p>Este proyecto se enfoca en el análisis y diseño de sistemas de información. Una buena arquitectura permite organizar los datos y los procesos de negocio de manera lógica, facilitando el mantenimiento y la evolución tecnológica.</p>
+        </section>
 
-            <!-- SECCIÓN CONTACTOS -->
-            <section id="contactos">
-                <h2>Contactos</h2>
-                <p>¿Necesitas una estructura sólida para tu sistema de información?</p>
-                <p>📧 Email: soporte.tecnico@arquitectura.com</p>
-                <p>💻 Github: github.com/proyecto-arquitectura</p>
-                <p>📍 Ubicación: Desarrollo Global</p>
-            </section>
+        <section id="contactos">
+            <h2>Contactos</h2>
+            <p>Si deseas conocer más sobre el diseño de arquitecturas robustas o colaborar en proyectos de desarrollo:</p>
+            <p>📧 Email: contacto@arquitectura.com<br>
+               📍 Ubicación: Desarrollo de Sistemas 2026</p>
+        </section>
+    </div>
 
-        </div>
-
-        <footer>
-            <p>&copy; 2026 Especialistas en Diseño de Sistemas e Información</p>
-        </footer>
+    <div class="footer">
+        <p>&copy; 2026 - Especialistas en Sistemas e Información</p>
     </div>
 
 </body>
