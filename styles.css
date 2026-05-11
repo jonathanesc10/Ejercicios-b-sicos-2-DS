@@ -1,69 +1,83 @@
-body {
-    background-color: oklab(97.421% 0.0013 -0.01222);
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-/* Encabezado */
 #mi-encabezado {
-    background-color: #4a63d8;
-    color: white;
-    text-align: center;
+    /* Nueva URL de la imagen de arquitectura */
+    background-image: url('https://ecuador.unir.net/wp-content/uploads/sites/8/2024/01/Que-es-la-arquitectura-de-software-Caracteristicas-y-tipos1.jpg'); 
+    
+    background-size: cover;
+    background-position: center; 
+    height: 35rem; 
+
+    color: #ffffff; 
+    /* text-orientation: upright; <-- Esta propiedad pone las letras una sobre otra, 
+       si no es lo que buscas, puedes comentarla o borrarla */
+    text-align: center; 
+    padding: 20px; 
+    
+    /* Añadimos flexbox para centrar el texto verticalmente en el encabezado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mi-encabezado h1 {
+    font-size: 45px; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+#mi-encabezado p {
+    font-size: 25px; 
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0);
     padding: 20px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.5s; 
+    z-index: 1000; /* Asegura que el menú esté siempre por encima */
 }
 
-/* Menú */
-nav ul {
-    list-style: none;
-    padding: 0;
+ul {
+    list-style-type: none;
+    text-align: right;
+    margin-right: 3rem;
 }
 
-nav ul li {
+li {
     display: inline;
-    margin: 15px;
+    margin-right: 30px; 
 }
 
-nav ul li a {
-    color: white;
+a {
     text-decoration: none;
-    font-size: 20px;
+    color: #fffdfd; 
     font-weight: bold;
 }
 
-/* Títulos */
-h1 {
-    font-size: 40px;
-    font-family: Georgia, serif;
+a:hover {
+    color: #ff9900; 
 }
 
-h2 {
-    font-size: 30px;
-    color: #4a63d8;
+/* CONFIGURACION DEL BODY */
+body {
+    margin: 0; /* Simplificado para quitar todos los márgenes */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Contenido */
+/* CONFIGURACION DEL CONTENIDO */
 .contenido {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
+    color: #000000;
+    font-size: 20px;
+    padding: 5%;
+    text-align: justify;
 }
 
-/* Párrafos */
-p {
-    line-height: 1.8;
-    font-size: 18px;
-}
-
-/* Pie de página */
 .footer {
-    background-color: #4a63d8;
-    color: white;
+    background-color: rgb(5,43,150);
+    padding: 10rem;
+    color: #ffffff;
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+}
 }
