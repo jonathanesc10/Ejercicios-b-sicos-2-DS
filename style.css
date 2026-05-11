@@ -1,0 +1,82 @@
+#mi-encabezado {
+    /* Nueva URL de la imagen de arquitectura */
+    background-image: url('https://ecuador.unir.net/wp-content/uploads/sites/8/2024/01/Que-es-la-arquitectura-de-software-Caracteristicas-y-tipos1.jpg'); 
+    
+    background-size: cover;
+    background-position: center; 
+    height: 35rem; 
+
+    color: #ffffff; 
+    /* text-orientation: upright; <-- Esta propiedad pone las letras una sobre otra, 
+       si no es lo que buscas, puedes comentarla o borrarla */
+    text-align: center; 
+    padding: 20px; 
+    
+    /* Añadimos flexbox para centrar el texto verticalmente en el encabezado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mi-encabezado h1 {
+    font-size: 45px; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+#mi-encabezado p {
+    font-size: 25px; 
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.5s; 
+    z-index: 1000; /* Asegura que el menú esté siempre por encima */
+}
+
+ul {
+    list-style-type: none;
+    text-align: right;
+    margin-right: 3rem;
+}
+
+li {
+    display: inline;
+    margin-right: 30px; 
+}
+
+a {
+    text-decoration: none;
+    color: #fffdfd; 
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff9900; 
+}
+
+/* CONFIGURACION DEL BODY */
+body {
+    margin: 0; /* Simplificado para quitar todos los márgenes */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONFIGURACION DEL CONTENIDO */
+.contenido {
+    color: #000000;
+    font-size: 20px;
+    padding: 5%;
+    text-align: justify;
+}
+
+.footer {
+    background-color: rgb(5,43,150);
+    padding: 10rem;
+    color: #ffffff;
+    text-align: center;
+}
