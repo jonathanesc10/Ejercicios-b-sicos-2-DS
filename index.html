@@ -1,143 +1,83 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arquitectura de Sistemas - Información Técnica</title>
-    <style>
-        body {
-            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ocgEgX1g5b7qCRMNs4ydIar_ovd-PHpjdQ&s');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            font-size: 18px;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
 
-        header {
-            background-color: #4a63d8;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
 
-        h1 {
-            margin: 0;
-            font-size: 35px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
+<link rel="stylesheet" href="styles.css">
 
-        .contenido {
-            width: 85%;
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 40px;
-            background-color: rgba(255, 255, 255, 0.97);
-            border-radius: 15px;
-            box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
-        }
 
-        h2 {
-            color: #4a63d8;
-            border-left: 5px solid #4a63d8;
-            padding-left: 15px;
-            margin-top: 30px;
-        }
+<header id="mi-encabezado">
 
-        p {
-            line-height: 1.8;
-            text-align: justify;
-        }
+<title>Diseño de Arquitectura de Software</title>
 
-        .info-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 20px;
-        }
+<nav>
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#acerca">Acerca de</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
 
-        .card {
-            background: #f4f7ff;
-            padding: 20px;
-            border-radius: 8px;
-            border-top: 4px solid #4a63d8;
-        }
 
-        ul {
-            padding-left: 20px;
-        }
+<h1>Diseño de Arquitectura de Software</h1>
+<p>Bienvenidos</p>
 
-        li {
-            margin-bottom: 10px;
-        }
+</header>
 
-        .footer {
-            background-color: #4a63d8;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-        }
-    </style>
-</head>
+
 <body>
 
-    <header>
-        <h1>Arquitectura de Sistemas</h1>
-    </header>
+<main>
 
-    <div class="contenido">
-        <section>
-            <h2>Definición de Arquitectura de Sistemas</h2>
-            <p>La arquitectura de sistemas es un modelo conceptual que define la estructura, el comportamiento y las vistas más generales de un sistema. En el ámbito de la informática, permite que los ingenieros y analistas comprendan cómo interactúan el hardware, el software y los datos para cumplir un propósito específico dentro de una organización.</p>
-        </section>
+<section class="contenido">
+<h2> <span style="background-color: rgb(208, 209, 245);" ;>Bienvenidos al
+Diseño de Arquitectura de Software</span></h2>
+<tr><td> <hr>
+</hr>
+<p>
+El Diseño de Arquitectura de Software es el proceso de planificar y organizar la
+estructura de un sistema informático antes de desarrollarlo. Define cómo estarán
+conectados los componentes del software, cómo se comunicarán entre sí y qué
+tecnologías se utilizarán.</p>
+<p>
+La arquitectura de software funciona como el plano de una casa: antes de construir,
+se necesita una estructura clara para evitar errores y asegurar que todo funcione correctamente.
+<p>
 
-        <section>
-            <h2>Componentes Fundamentales</h2>
-            <div class="info-grid">
-                <div class="card">
-                    <strong>Infraestructura (Hardware):</strong>
-                    <p>Incluye servidores, redes, dispositivos de almacenamiento y terminales que soportan la ejecución del software.</p>
-                </div>
-                <div class="card">
-                    <strong>Lógica (Software):</strong>
-                    <p>Comprende los sistemas operativos, bases de datos y aplicaciones que procesan la información.</p>
-                </div>
-            </div>
-        </section>
+El diseño de arquitectura de software sirve para organizar el sistema en diferentes módulos
+o partes, mejorar el rendimiento del programa, facilitar el mantenimiento y la corrección de errores,
+aumentar la seguridad de la información y permitir que el sistema pueda crecer en el futuro sin
+problemas. Gracias a esto, los desarrolladores pueden trabajar de manera más ordenada y eficiente.</p>
 
-        <section>
-            <h2>Principios de un Buen Diseño</h2>
-            <p>Para que una arquitectura de sistema sea exitosa, debe cumplir con ciertos atributos de calidad conocidos como "requerimientos no funcionales":</p>
-            <ul>
-                <li><strong>Interoperabilidad:</strong> Capacidad de comunicarse con otros sistemas externos.</li>
-                <li><strong>Disponibilidad:</strong> Asegurar que el sistema esté operativo el mayor tiempo posible.</li>
-                <li><strong>Escalabilidad:</strong> Permitir el crecimiento del sistema sin degradar su rendimiento.</li>
-                <li><strong>Mantenibilidad:</strong> Facilidad para actualizar componentes o corregir fallas.</li>
-            </ul>
-        </section>
+Existen diferentes tipos de arquitectura de software. La arquitectura monolítica reúne todo el sistema en
+una sola aplicación; es sencilla al inicio, pero difícil de actualizar cuando el sistema crece. La arquitectura
+cliente-servidor funciona mediante solicitudes de usuarios a un servidor, como ocurre en las páginas web. La
+arquitectura en capas divide el sistema en niveles como presentación, lógica y datos, facilitando la
+organización. También está la arquitectura de microservicios, donde el sistema se divide en pequeños servicios
+independientes que permiten mayor escalabilidad y mantenimiento.
+<p>
+Algunos ejemplos de arquitectura de software se encuentran en las redes sociales, sistemas bancarios,
+el diseño de arquitectura de software es fundamental para desarrollar sistemas modernos y eficientes, ya que
+ayuda a mantener el orden, mejorar la seguridad y facilitar el crecimiento de las aplicaciones tecnológicas.</p>
 
-        <section>
-            <h2>Niveles de la Arquitectura</h2>
-            <p>El diseño de sistemas se suele dividir en niveles para facilitar su gestión:</p>
-            <ol>
-                <li><strong>Arquitectura de Negocio:</strong> Define los procesos y estrategias de la empresa.</li>
-                <li><strong>Arquitectura de Datos:</strong> Organiza cómo se almacena y fluye la información.</li>
-                <li><strong>Arquitectura de Aplicaciones:</strong> Define qué programas se necesitan y cómo se relacionan.</li>
-                <li><strong>Arquitectura Tecnológica:</strong> Describe el hardware y las redes de soporte.</li>
-            </ol>
-        </section>
-    </div>
+</td></tr>
 
-    <footer class="footer">
-        <p>&copy; 2026 - Guía Técnica de Ingeniería de Sistemas e Información</p>
-    </footer>
+<section id="acerca"></section>
+<section id="acerca">
+    <h2>Acerca de</h2>
+
+    <p>
+        
+    </p>
+</section>
+</main>
+
+
+<div class="footer">Derechos reservados © 2026 Jonathan Escobar</div>
+
+
+
+<script src="script.js"></script>
+
 
 </body>
 </html>
